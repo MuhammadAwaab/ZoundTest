@@ -10,20 +10,30 @@ import Foundation
 import Foundation
 
 protocol DataProviderProtocol {
-    func fetchAndProvideData(completion: @escaping(_ serverData: Data?) -> Void)
+    func fetchAndProvideData(completion: @escaping(_ serverData: [CryptoModel]?) -> Void)
 }
 
 class DataProvider: DataProviderProtocol {
-    func fetchAndProvideData(completion: @escaping (Data?) -> Void) {
+    func fetchAndProvideData(completion: @escaping ([CryptoModel]?) -> Void) {
         let provider = ServiceProvider<SampleService>()
         
         provider.load(service: .fetchSampleProjectData) { result in
             switch result {
             case .success(let data):
                 do {
-                    let jsonDecoder = JSONDecoder()
-                    let responseModel = try jsonDecoder.decode(Data.self, from: data)
-                    completion(responseModel)
+                    if let someDataArrayFromJSON = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [[String: Any]] {
+                        print(someDataArrayFromJSON)
+                        var parsedDataArray: [CryptoModel] = []
+                        
+                        for dataDictionary in someDataArrayFromJSON {
+                            parsedDataArray.append(try CryptoModel(from: dataDictionary as! Decoder))
+                        }
+                        
+                        completion(parsedDataArray)
+                    }
+                    
+                    completion(nil)
+                    
                 } catch  {
                     print("Serialization invalid error....")
                     completion(nil)

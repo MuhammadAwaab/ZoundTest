@@ -21,6 +21,8 @@
 		FF3DC75E28A914EC006E78CF /* SampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75B28A914EC006E78CF /* SampleService.swift */; };
 		FF3DC76028A916AC006E78CF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75F28A916AC006E78CF /* DataProvider.swift */; };
 		FF3DC76128A916AC006E78CF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75F28A916AC006E78CF /* DataProvider.swift */; };
+		FF3DC76328A9192C006E78CF /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC76228A9192C006E78CF /* CryptoModel.swift */; };
+		FF3DC76428A9192C006E78CF /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC76228A9192C006E78CF /* CryptoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		FF3DC75A28A914EC006E78CF /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		FF3DC75B28A914EC006E78CF /* SampleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleService.swift; sourceTree = "<group>"; };
 		FF3DC75F28A916AC006E78CF /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		FF3DC76228A9192C006E78CF /* CryptoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 		FF3DC75528A90F24006E78CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF3DC76228A9192C006E78CF /* CryptoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +329,7 @@
 				FF3DC76028A916AC006E78CF /* DataProvider.swift in Sources */,
 				FF3DC72828A84BD6006E78CF /* ViewController.swift in Sources */,
 				FF3DC72428A84BD6006E78CF /* AppDelegate.swift in Sources */,
+				FF3DC76328A9192C006E78CF /* CryptoModel.swift in Sources */,
 				FF3DC72628A84BD6006E78CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3DC76428A9192C006E78CF /* CryptoModel.swift in Sources */,
 				FF3DC76128A916AC006E78CF /* DataProvider.swift in Sources */,
 				FF3DC73B28A84BE2006E78CF /* ZoundTestTests.swift in Sources */,
 			);
