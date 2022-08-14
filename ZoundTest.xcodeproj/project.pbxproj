@@ -16,6 +16,11 @@
 		FF3DC73B28A84BE2006E78CF /* ZoundTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC73A28A84BE2006E78CF /* ZoundTestTests.swift */; };
 		FF3DC74528A84BE2006E78CF /* ZoundTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC74428A84BE2006E78CF /* ZoundTestUITests.swift */; };
 		FF3DC74728A84BE2006E78CF /* ZoundTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC74628A84BE2006E78CF /* ZoundTestUITestsLaunchTests.swift */; };
+		FF3DC75C28A914EC006E78CF /* NetworkServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75928A914EC006E78CF /* NetworkServiceHelper.swift */; };
+		FF3DC75D28A914EC006E78CF /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75A28A914EC006E78CF /* DataRequest.swift */; };
+		FF3DC75E28A914EC006E78CF /* SampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75B28A914EC006E78CF /* SampleService.swift */; };
+		FF3DC76028A916AC006E78CF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75F28A916AC006E78CF /* DataProvider.swift */; };
+		FF3DC76128A916AC006E78CF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC75F28A916AC006E78CF /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,10 @@
 		FF3DC74028A84BE2006E78CF /* ZoundTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoundTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3DC74428A84BE2006E78CF /* ZoundTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoundTestUITests.swift; sourceTree = "<group>"; };
 		FF3DC74628A84BE2006E78CF /* ZoundTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoundTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF3DC75928A914EC006E78CF /* NetworkServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceHelper.swift; sourceTree = "<group>"; };
+		FF3DC75A28A914EC006E78CF /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		FF3DC75B28A914EC006E78CF /* SampleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleService.swift; sourceTree = "<group>"; };
+		FF3DC75F28A916AC006E78CF /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +108,12 @@
 		FF3DC72228A84BD6006E78CF /* ZoundTest */ = {
 			isa = PBXGroup;
 			children = (
-				FF3DC72328A84BD6006E78CF /* AppDelegate.swift */,
-				FF3DC72528A84BD6006E78CF /* SceneDelegate.swift */,
-				FF3DC72728A84BD6006E78CF /* ViewController.swift */,
-				FF3DC72928A84BD6006E78CF /* Main.storyboard */,
-				FF3DC72C28A84BE2006E78CF /* Assets.xcassets */,
-				FF3DC72E28A84BE2006E78CF /* LaunchScreen.storyboard */,
-				FF3DC73128A84BE2006E78CF /* Info.plist */,
+				FF3DC75728A90F51006E78CF /* Services */,
+				FF3DC75628A90F31006E78CF /* Helpers */,
+				FF3DC75528A90F24006E78CF /* Model */,
+				FF3DC75428A90F16006E78CF /* ViewModel */,
+				FF3DC75328A90F07006E78CF /* View */,
+				FF3DC75828A90FA9006E78CF /* Resources */,
 			);
 			path = ZoundTest;
 			sourceTree = "<group>";
@@ -125,6 +133,59 @@
 				FF3DC74628A84BE2006E78CF /* ZoundTestUITestsLaunchTests.swift */,
 			);
 			path = ZoundTestUITests;
+			sourceTree = "<group>";
+		};
+		FF3DC75328A90F07006E78CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF3DC72E28A84BE2006E78CF /* LaunchScreen.storyboard */,
+				FF3DC72928A84BD6006E78CF /* Main.storyboard */,
+				FF3DC72728A84BD6006E78CF /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF3DC75428A90F16006E78CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF3DC75528A90F24006E78CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF3DC75628A90F31006E78CF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF3DC72328A84BD6006E78CF /* AppDelegate.swift */,
+				FF3DC72528A84BD6006E78CF /* SceneDelegate.swift */,
+				FF3DC75F28A916AC006E78CF /* DataProvider.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF3DC75728A90F51006E78CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF3DC75A28A914EC006E78CF /* DataRequest.swift */,
+				FF3DC75928A914EC006E78CF /* NetworkServiceHelper.swift */,
+				FF3DC75B28A914EC006E78CF /* SampleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF3DC75828A90FA9006E78CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF3DC72C28A84BE2006E78CF /* Assets.xcassets */,
+				FF3DC73128A84BE2006E78CF /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3DC75C28A914EC006E78CF /* NetworkServiceHelper.swift in Sources */,
+				FF3DC75E28A914EC006E78CF /* SampleService.swift in Sources */,
+				FF3DC75D28A914EC006E78CF /* DataRequest.swift in Sources */,
+				FF3DC76028A916AC006E78CF /* DataProvider.swift in Sources */,
 				FF3DC72828A84BD6006E78CF /* ViewController.swift in Sources */,
 				FF3DC72428A84BD6006E78CF /* AppDelegate.swift in Sources */,
 				FF3DC72628A84BD6006E78CF /* SceneDelegate.swift in Sources */,
@@ -268,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3DC76128A916AC006E78CF /* DataProvider.swift in Sources */,
 				FF3DC73B28A84BE2006E78CF /* ZoundTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
