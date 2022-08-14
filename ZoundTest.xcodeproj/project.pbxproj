@@ -27,6 +27,10 @@
 		FF3DC76728A91E42006E78CF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC76528A91E42006E78CF /* MainViewModel.swift */; };
 		FF3DC76928A91E66006E78CF /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC76828A91E66006E78CF /* ItemViewModel.swift */; };
 		FF3DC76A28A91E66006E78CF /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC76828A91E66006E78CF /* ItemViewModel.swift */; };
+		FF3DC76D28A97A58006E78CF /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC76B28A97A58006E78CF /* ItemCell.swift */; };
+		FF3DC76E28A97A58006E78CF /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3DC76B28A97A58006E78CF /* ItemCell.swift */; };
+		FF3DC76F28A97A58006E78CF /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3DC76C28A97A58006E78CF /* ItemCell.xib */; };
+		FF3DC77028A97A58006E78CF /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3DC76C28A97A58006E78CF /* ItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,8 @@
 		FF3DC76228A9192C006E78CF /* CryptoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		FF3DC76528A91E42006E78CF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FF3DC76828A91E66006E78CF /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		FF3DC76B28A97A58006E78CF /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		FF3DC76C28A97A58006E78CF /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,8 @@
 				FF3DC72E28A84BE2006E78CF /* LaunchScreen.storyboard */,
 				FF3DC72928A84BD6006E78CF /* Main.storyboard */,
 				FF3DC72728A84BD6006E78CF /* ViewController.swift */,
+				FF3DC76B28A97A58006E78CF /* ItemCell.swift */,
+				FF3DC76C28A97A58006E78CF /* ItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3DC76F28A97A58006E78CF /* ItemCell.xib in Resources */,
 				FF3DC73028A84BE2006E78CF /* LaunchScreen.storyboard in Resources */,
 				FF3DC72D28A84BE2006E78CF /* Assets.xcassets in Resources */,
 				FF3DC72B28A84BD6006E78CF /* Main.storyboard in Resources */,
@@ -314,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3DC77028A97A58006E78CF /* ItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +344,7 @@
 				FF3DC75C28A914EC006E78CF /* NetworkServiceHelper.swift in Sources */,
 				FF3DC75E28A914EC006E78CF /* SampleService.swift in Sources */,
 				FF3DC75D28A914EC006E78CF /* DataRequest.swift in Sources */,
+				FF3DC76D28A97A58006E78CF /* ItemCell.swift in Sources */,
 				FF3DC76928A91E66006E78CF /* ItemViewModel.swift in Sources */,
 				FF3DC76028A916AC006E78CF /* DataProvider.swift in Sources */,
 				FF3DC72828A84BD6006E78CF /* ViewController.swift in Sources */,
@@ -350,6 +361,7 @@
 			files = (
 				FF3DC76428A9192C006E78CF /* CryptoModel.swift in Sources */,
 				FF3DC76128A916AC006E78CF /* DataProvider.swift in Sources */,
+				FF3DC76E28A97A58006E78CF /* ItemCell.swift in Sources */,
 				FF3DC73B28A84BE2006E78CF /* ZoundTestTests.swift in Sources */,
 				FF3DC76A28A91E66006E78CF /* ItemViewModel.swift in Sources */,
 				FF3DC76728A91E42006E78CF /* MainViewModel.swift in Sources */,

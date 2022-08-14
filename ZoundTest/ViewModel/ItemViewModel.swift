@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ItemViewModelProtocol {
-    
+    func currencyNameForDisplay() -> String
 }
 
 class ItemViewModel: ItemViewModelProtocol {
@@ -17,6 +17,10 @@ class ItemViewModel: ItemViewModelProtocol {
     
     init(dataModel: CryptoModel){
         self.dataModelToDisplay = dataModel
+    }
+    
+    func currencyNameForDisplay() -> String {
+        return dataModelToDisplay.baseAsset?.uppercased() ?? ""
     }
     
 }

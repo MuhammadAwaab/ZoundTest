@@ -11,6 +11,9 @@ protocol MainViewModelProtocol {
     func fetchParsedDataForDisplay()
     func getCellViewModel(at indexPath: IndexPath) -> ItemViewModelProtocol
     func numberOfRowsToDisplay() -> Int
+    func getTableCellIdentifier() -> String
+    var updateView:(() -> Void)? { get set }
+    var showErrorAlertView:(() -> Void)? { get set }
 }
 
 
@@ -18,7 +21,7 @@ class MainViewModel: MainViewModelProtocol {
     
     
     private var currentProvider: DataProviderProtocol
-    private let cellIdentifier = "DataCell"
+    private let cellIdentifier = "ItemCell"
     
     var cellViewModelsArray: [ItemViewModelProtocol] = [] {
         didSet{
@@ -50,6 +53,10 @@ class MainViewModel: MainViewModelProtocol {
     
     func numberOfRowsToDisplay() -> Int {
         return cellViewModelsArray.count
+    }
+    
+    func getTableCellIdentifier() -> String {
+        return cellIdentifier
     }
     
     private func updateCellModelViewsWith(parsedData: [CryptoModel]) {
