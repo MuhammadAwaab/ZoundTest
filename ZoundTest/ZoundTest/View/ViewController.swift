@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var mainTableView: UITableView!
     
    private var viewModel: MainViewModelProtocol = MainViewModel()
     
@@ -26,11 +27,11 @@ class ViewController: UIViewController {
     
     // MARK: - ViewModel Bindings
     func bindWithViewModel() {
-      //  mainTableView.register(UINib(nibName: viewModel.getTableCellIdentifier(), bundle: nil), forCellReuseIdentifier: viewModel.getTableCellIdentifier())
+        mainTableView.register(UINib(nibName: viewModel.getTableCellIdentifier(), bundle: nil), forCellReuseIdentifier: viewModel.getTableCellIdentifier())
         
         self.viewModel.updateView = {[weak self] in
             DispatchQueue.main.async {
-             //   self?.mainTableView.reloadData()
+                self?.mainTableView.reloadData()
             }
         }
         self.viewModel.fetchParsedDataForDisplay()
