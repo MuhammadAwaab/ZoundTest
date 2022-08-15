@@ -27,6 +27,17 @@
 		FF95B94828A9CD0900E41569 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93C28A9CD0900E41569 /* MainViewModel.swift */; };
 		FF95B94A28AA009B00E41569 /* SharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B94928AA009B00E41569 /* SharedManager.swift */; };
 		FF95B94B28AA009B00E41569 /* SharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B94928AA009B00E41569 /* SharedManager.swift */; };
+		FF95B94D28AA082200E41569 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B94C28AA082200E41569 /* MockDataProvider.swift */; };
+		FF95B94E28AA087000E41569 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93528A9CD0900E41569 /* CryptoModel.swift */; };
+		FF95B94F28AA096800E41569 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B92D28A9CD0800E41569 /* DataProvider.swift */; };
+		FF95B95128AA09DC00E41569 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF95B95028AA09DC00E41569 /* SampleData.json */; };
+		FF95B95228AA0A8E00E41569 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93C28A9CD0900E41569 /* MainViewModel.swift */; };
+		FF95B95328AA0AF700E41569 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B94C28AA082200E41569 /* MockDataProvider.swift */; };
+		FF95B95428AA0F7600E41569 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93B28A9CD0900E41569 /* ItemViewModel.swift */; };
+		FF95B95528AA0FD600E41569 /* SampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93328A9CD0800E41569 /* SampleService.swift */; };
+		FF95B95628AA0FD600E41569 /* NetworkServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93228A9CD0800E41569 /* NetworkServiceHelper.swift */; };
+		FF95B95728AA0FD600E41569 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93128A9CD0800E41569 /* DataRequest.swift */; };
+		FF95B95828AA107000E41569 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF95B95028AA09DC00E41569 /* SampleData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +81,8 @@
 		FF95B93B28A9CD0900E41569 /* ItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		FF95B93C28A9CD0900E41569 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FF95B94928AA009B00E41569 /* SharedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedManager.swift; sourceTree = "<group>"; };
+		FF95B94C28AA082200E41569 /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
+		FF95B95028AA09DC00E41569 /* SampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +151,9 @@
 		FF95B91228A9CBD900E41569 /* ZoundTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				FF95B95028AA09DC00E41569 /* SampleData.json */,
 				FF95B91328A9CBD900E41569 /* ZoundTestTests.swift */,
+				FF95B94C28AA082200E41569 /* MockDataProvider.swift */,
 			);
 			path = ZoundTestTests;
 			sourceTree = "<group>";
@@ -303,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF95B94528A9CD0900E41569 /* ItemCell.xib in Resources */,
+				FF95B95828AA107000E41569 /* SampleData.json in Resources */,
 				FF95B90928A9CBD800E41569 /* LaunchScreen.storyboard in Resources */,
 				FF95B90628A9CBD800E41569 /* Assets.xcassets in Resources */,
 				FF95B90428A9CBCF00E41569 /* Main.storyboard in Resources */,
@@ -313,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF95B95128AA09DC00E41569 /* SampleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +352,7 @@
 				FF95B94228A9CD0900E41569 /* SampleService.swift in Sources */,
 				FF95B94628A9CD0900E41569 /* ItemCell.swift in Sources */,
 				FF95B94828A9CD0900E41569 /* MainViewModel.swift in Sources */,
+				FF95B95328AA0AF700E41569 /* MockDataProvider.swift in Sources */,
 				FF95B94728A9CD0900E41569 /* ItemViewModel.swift in Sources */,
 				FF95B94328A9CD0900E41569 /* CryptoModel.swift in Sources */,
 				FF95B93D28A9CD0900E41569 /* DataProvider.swift in Sources */,
@@ -349,8 +367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF95B95628AA0FD600E41569 /* NetworkServiceHelper.swift in Sources */,
+				FF95B95728AA0FD600E41569 /* DataRequest.swift in Sources */,
 				FF95B94B28AA009B00E41569 /* SharedManager.swift in Sources */,
+				FF95B95528AA0FD600E41569 /* SampleService.swift in Sources */,
+				FF95B94D28AA082200E41569 /* MockDataProvider.swift in Sources */,
+				FF95B94F28AA096800E41569 /* DataProvider.swift in Sources */,
+				FF95B95428AA0F7600E41569 /* ItemViewModel.swift in Sources */,
+				FF95B94E28AA087000E41569 /* CryptoModel.swift in Sources */,
 				FF95B91428A9CBD900E41569 /* ZoundTestTests.swift in Sources */,
+				FF95B95228AA0A8E00E41569 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 protocol DataProviderProtocol {
     func fetchAndProvideData(completion: @escaping(_ serverData: [CryptoModel]?) -> Void)
 }
