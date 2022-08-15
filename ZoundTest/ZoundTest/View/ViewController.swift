@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet weak var currencySegmentedControl: UISegmentedControl!
     
    private var viewModel: MainViewModelProtocol = MainViewModel()
     
@@ -35,6 +36,14 @@ class ViewController: UIViewController {
             }
         }
         self.viewModel.fetchParsedDataForDisplay()
+    }
+    @IBAction func currencySegmentValueChanged(_ sender: Any) {
+        if currencySegmentedControl.selectedSegmentIndex == 0 {
+            SharedManager.shared.isShowingUSD = true
+        } else {
+            SharedManager.shared.isShowingUSD = false
+        }
+        self.mainTableView.reloadData()
     }
     
 }

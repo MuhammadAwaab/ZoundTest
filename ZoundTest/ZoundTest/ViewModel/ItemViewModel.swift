@@ -15,11 +15,12 @@ protocol ItemViewModelProtocol {
     func isOpenPriceLowerThanLastPrice() -> Bool
     func getCurrentOpenPrice() -> String
     func getCurrencyLabel() -> String
+    
 }
 
 class ItemViewModel: ItemViewModelProtocol {
     func getCurrencyLabel() -> String {
-        if isDisplayingUSD {
+        if SharedManager.shared.isShowingUSD {
             return "/ USD"
         } else {
             return "/ SEK"
@@ -27,15 +28,15 @@ class ItemViewModel: ItemViewModelProtocol {
     }
     
     func getCurrentOpenPrice() -> String {
-        return dataModelToDisplay.openPrice ?? ""
+        return dataModelToDisplay.openPrice?.convertToSelectedCurrency() ?? ""
     }
     
     func getLowPriceToDipslay() -> String {
-        return dataModelToDisplay.lowPrice ?? ""
+        return dataModelToDisplay.lowPrice?.convertToSelectedCurrency() ?? ""
     }
     
     func getHighPriceToDisplay() -> String {
-        return dataModelToDisplay.highPrice ?? ""
+        return dataModelToDisplay.highPrice?.convertToSelectedCurrency() ?? ""
     }
     
     func isOpenPriceLowerThanLastPrice() -> Bool {
@@ -51,7 +52,6 @@ class ItemViewModel: ItemViewModelProtocol {
     
     
     private let dataModelToDisplay: CryptoModel
-    var isDisplayingUSD: Bool = true
     
     init(dataModel: CryptoModel){
         self.dataModelToDisplay = dataModel

@@ -25,6 +25,8 @@
 		FF95B94628A9CD0900E41569 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93928A9CD0900E41569 /* ItemCell.swift */; };
 		FF95B94728A9CD0900E41569 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93B28A9CD0900E41569 /* ItemViewModel.swift */; };
 		FF95B94828A9CD0900E41569 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B93C28A9CD0900E41569 /* MainViewModel.swift */; };
+		FF95B94A28AA009B00E41569 /* SharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B94928AA009B00E41569 /* SharedManager.swift */; };
+		FF95B94B28AA009B00E41569 /* SharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B94928AA009B00E41569 /* SharedManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,7 @@
 		FF95B93928A9CD0900E41569 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		FF95B93B28A9CD0900E41569 /* ItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		FF95B93C28A9CD0900E41569 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FF95B94928AA009B00E41569 /* SharedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				FF95B92D28A9CD0800E41569 /* DataProvider.swift */,
+				FF95B94928AA009B00E41569 /* SharedManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -326,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF95B94A28AA009B00E41569 /* SharedManager.swift in Sources */,
 				FF95B94428A9CD0900E41569 /* ViewController.swift in Sources */,
 				FF95B94228A9CD0900E41569 /* SampleService.swift in Sources */,
 				FF95B94628A9CD0900E41569 /* ItemCell.swift in Sources */,
@@ -344,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF95B94B28AA009B00E41569 /* SharedManager.swift in Sources */,
 				FF95B91428A9CBD900E41569 /* ZoundTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
